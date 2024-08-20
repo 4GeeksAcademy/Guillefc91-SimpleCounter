@@ -5,10 +5,10 @@ export const Counter = () => {
     let initialCounter = 0;
 
     const updateCounter = () => {
-        const four = Math.floor(initialCounter / 1000) ;
-        const three = Math.floor(initialCounter / 100);
-        const two = Math.floor(initialCounter / 10);
-        const one = Math.floor(initialCounter / 1);
+        const four = Math.floor(initialCounter / 1000) % 10;
+        const three = Math.floor(initialCounter / 100) % 10;
+        const two = Math.floor(initialCounter / 10) % 10;
+        const one = Math.floor(initialCounter / 1) % 10;
 
         document.querySelector(".four").textContent = four;
         document.querySelector(".three").textContent = three;
